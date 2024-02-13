@@ -7,24 +7,23 @@ body, html {
   .weather-container {
     width: 1010px;
     margin: 20px auto;
-    background: white;
+    background: #e9ecef;
     overflow: hidden; 
   }
   .weather-header {
     padding-bottom: 20px;
-    background: #e9ecef;
     text-align: center;
   }
   .weather-main {
     display: flex;
   }
   .weather-sidebar {
-    width: 200px; /* Примерная ширина боковой панели */
+    width: 60%;
     padding: 20px;
     border-right: 1px solid #dee2e6;
   }
   .weather-content {
-    flex: 1; /* Занимает оставшееся пространство */
+    flex: 1;
     padding: 20px;
   }
   .weather-footer {
@@ -88,3 +87,61 @@ body, html {
     background: #f0f0f0;
   }
   /* -------------------------------- */
+  .weather-status-main {
+    margin: 0;
+    padding: 0;
+    background-image: url('kroxi_back.jpeg');
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+  }
+  .breadcrumbs,
+  .weather-status,
+  .tabs {
+    padding: 10px 20px;
+  }
+  .breadcrumbs {
+    font-size: 0.9em;
+  }
+  .breadcrumbs a{
+    color: white;
+    text-decoration: none;
+  }
+  .breadcrumbs a:hover{
+    color: wheat;
+  }
+  .weather-status {
+    font-size: 1.2em; 
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .tabs a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  .tabs a.active {
+    border-bottom: 3px solid white;
+  }
+  .tabs a:hover {
+    color: wheat;
+  }
+  /* ---------------------- */
+.page-title-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.page-title-wrap .page-title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.page-title-wrap .page-title h1 {
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
