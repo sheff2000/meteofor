@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e9ecef; 
+  }
+  .weather-container {
+    width: 1010px;
+    margin: 20px auto;
+    background: white;
+    overflow: hidden; 
+  }
+  .weather-header {
+    padding-bottom: 20px;
+    background: #e9ecef;
+    text-align: center;
+  }
+  .weather-main {
+    display: flex;
+  }
+  .weather-sidebar {
+    width: 200px; /* Примерная ширина боковой панели */
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+  }
+  .weather-content {
+    flex: 1; /* Занимает оставшееся пространство */
+    padding: 20px;
+  }
+  .weather-footer {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+  }
+
+  /* HEADER LINE */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 150px;
+  }
+  .logo a {
+    width: 100%;
+  }
+  .logo img {
+    height: 50px; /* Примерный размер логотипа */
+  }
+  .search-box {
+    flex-grow: 1;
+    margin: 0 20px;
+    text-align: left;
+  }
+  .search-box input[type="search"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .language-selector {
+    position: relative;
+  }
+  .language-selector button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .language-selector ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .language-selector ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .language-selector ul li:hover {
+    background: #f0f0f0;
+  }
+  /* -------------------------------- */
