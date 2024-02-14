@@ -17,14 +17,15 @@ body, html {
   .weather-main {
     display: flex;
   }
-  .weather-sidebar {
+  .weather-content {
     width: 60%;
     padding: 20px;
     border-right: 1px solid #dee2e6;
+    padding-left: 0px;
   }
-  .weather-content {
+  .weather-sidebar {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
   }
   .weather-footer {
     padding: 20px;
@@ -33,6 +34,13 @@ body, html {
     text-align: center;
   }
 
+  .ads-block {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+  }
   /* HEADER LINE */
   .navbar {
     display: flex;
@@ -46,7 +54,7 @@ body, html {
     width: 100%;
   }
   .logo img {
-    height: 50px; /* Примерный размер логотипа */
+    height: 50px; 
   }
   .search-box {
     flex-grow: 1;
@@ -144,4 +152,83 @@ body, html {
     font-weight: inherit;
     line-height: inherit;
     margin: 0;
+}
+/* ----------------- */
+.weather-day-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto;
+    margin-top: 15px; 
+}
+.weather-day-row .weather-day-box {
+    background-color: white;
+    text-align: left; 
+    padding: 5px; 
+}
+.weather-day-box-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.weather-info .tab-content {
+    display: grid;
+    grid-template-rows: 20px 25px 1fr;
+}
+.tab-content .date{
+    font-size: 17px;
+    line-height: 20px;
+}
+.tab-content .day {
+    color: #777;
+    font-size: 13px;
+    line-height: 15px;
+}
+.weather-info .temp-content-tip1 {
+    text-align: center;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.temp-content-tip1 .weather-value {
+    background-color: rgba(114, 219, 32, 0.25);
+    font-size: 22px;
+    line-height: 23px;
+    padding-top: 2px;
+}
+
+.temp-content-tip1 .weather-feel {
+    background-color: rgba(125, 221, 49, 0.7);
+    font-size: 11px;
+    line-height: 13px;
+    padding: 2px 0;
+}
+
+.weather-info .temp-content-tip2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+.temp-content-tip2 .weather-value-wrapper-tip1 {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 0px;
+}
+
+.temp-content-tip2 .weather-value-wrapper-tip2 {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 0px;
+}
+.temp-content-tip2 .weather-value-wrapper-tip1 .content, .temp-content-tip2 .weather-value-wrapper-tip2 .content {
+    background-color: rgba(114, 219, 32, 0.25);
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 23px;
+    padding-top: 2px;
 }
