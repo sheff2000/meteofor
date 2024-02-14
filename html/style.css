@@ -168,6 +168,12 @@ body, html {
     background-color: white;
     text-align: left; 
     padding: 5px; 
+    border: 5px solid #e9ecef;
+    border-radius: 10px;
+}
+.weather-day-row .active {
+    border: 5px solid white;
+    height: 100%;
 }
 .weather-day-box-wrapper {
     display: grid;
@@ -231,4 +237,32 @@ body, html {
     font-size: 22px;
     line-height: 23px;
     padding-top: 2px;
+}
+
+.weather-detail-wrapper {
+    background-color: white;
+}
+
+.weather-detail-wrapper .detail-time{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+}
+
+.info-time-wrapper .time {
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.info-time-wrapper .time sup{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.info-time-wrapper .time-pic {
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
 }
