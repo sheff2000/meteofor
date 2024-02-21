@@ -67,3 +67,87 @@
     color: green;
     font-size: 12px;
 }
+
+@media (max-width: 767px) {
+    .item {
+      width: 100%; 
+      height: auto; 
+    }
+    .col-2 {
+        justify-content: stretch;
+    }
+    .image-sale, .item-cart-img {
+        display: inline;
+        width: 100px;
+    }
+    .main-foto-div {
+        height: auto;
+    }
+    .main-foto {
+      width: 100%;
+      max-height: none;
+    }
+    .price-new {
+        font-size: 48px;
+    }
+    .item-title  {
+        font-size: 24px;
+    }
+    .item-stars-img {
+        height: 40px;
+    }
+    .item-cart {
+        width: 100%;
+    }
+  }
+  
+  /* Стили для планшетов */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .item {
+        width: 100%; 
+        height: auto; 
+      }
+      .col-2 {
+          justify-content: space-between;
+      }
+      .image-sale, .item-cart-img {
+          display: inline;
+          width: 150px;
+      }
+      .main-foto-div {
+          height: auto;
+      }
+      .main-foto {
+        width: 100%;
+        max-height: none;
+      }
+      .price-new {
+          font-size: 68px;
+      }
+      .item-title  {
+          font-size: 34px;
+      }
+      .item-stars-img {
+          height: 60px;
+      }
+      .item-cart {
+          width: 100%;
+      }
+  }
+  
+  /* Стили для десктопов */
+  @media (min-width: 1024px) {
+    .item {
+      width: 250px; /* Фиксированная ширина, как в исходном стиле */
+      height: 450px; /* Фиксированная высота, как в исходном стиле */
+    }
+    .main-foto {
+      width: 240px; /* Фиксированная ширина */
+      max-height: 170px; /* Фиксированная максимальная высота */
+    }
+    .col-2 {
+      display: grid;
+      grid-template-columns: auto auto; /* Возвращаемся к исходной двухколоночной структуре */
+    }
+  }
+  
