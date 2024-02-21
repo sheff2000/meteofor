@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.h1-fio {
+  font-size: 30px;
+  color: green;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

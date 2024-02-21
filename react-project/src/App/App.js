@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
         >
           Learn React
         </a>
+        <h1 className="h1-fio">Обвінцев Сергій Васильович</h1>
+        <img src="./foto.png" alt="foto"/>
       </header>
     </div>
   );
