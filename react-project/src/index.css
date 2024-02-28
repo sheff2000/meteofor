@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Распределяет дочерние элементы равномерно в строке, включая крайние промежутки */
+  }
+
+.main-cont div {
+  
+  
+}
