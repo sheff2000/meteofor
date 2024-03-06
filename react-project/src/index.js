@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Product from './components/Product/Product';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
+import NasaButton from './components/NasaButton/NassaButton';
+import PixBtn from './components/PIX/PixBtn/PixBtn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -54,16 +56,15 @@ const products = [
 root.render(
   <React.StrictMode>
     <div className='main-cont'>
-      {products.map(product => (
-          <Product
-            key={product.id}
-            id={product.id}
-            photo={product.photo}
-            price={product.price}
-            title={product.title}
-            teg={product.tag}
-          />
-        ))}
+      <div className='row'>
+        <div className='col-6'>
+          <NasaButton />
+        </div>
+        <div className='col-6'>
+          <PixBtn />
+        </div>
+      </div>
+      
     </div>
     
     
