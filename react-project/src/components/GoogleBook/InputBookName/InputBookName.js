@@ -13,8 +13,9 @@ function InputBookName({ onSearch }) {
     <input
       type="text"
       value={query}
+      className='form-control'
       onChange={handleChange}
-      placeholder="Поиск книг..."
+      placeholder="Название ..."
     />
   );
 }

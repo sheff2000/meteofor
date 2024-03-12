@@ -1,0 +1,20 @@
+.books-box {
+    margin-top: 25px;
+}
+.books-box {
+    border-right: 1px solid rgb(161, 161, 161);
+    padding-right: 30px;
+}
+
+.nosearch {
+    color: rgb(161, 161, 161);
+}
+.header-t1 {
+    padding: 20px;
+    background-color: #f6cece;
+    padding-bottom: 0px;
+}
+.header-t2 {
+    background-color: #f6cece;
+    padding: 10px
+}

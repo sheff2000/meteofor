@@ -11,8 +11,6 @@ root.render(
     <div className='main-cont'>
         <App />
     </div>
-    
-    
   </React.StrictMode>
 );
 

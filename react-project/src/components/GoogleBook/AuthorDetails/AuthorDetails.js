@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import ApiBooks from '../../../api/booksAPI';
 
 function AuthorDetails({ author }) {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    if (author) {
-      const URL = `https://www.googleapis.com/books/v1/volumes?q=inauthor:${encodeURIComponent(author)}`;
+    const fetchBooks = async () => {
+      if (author) {
+        const fetchedBooks = await ApiBooks.searchBooksByAutor(author);
+        setBooks(fetchedBooks || []);
+      }
+    };
+    fetchBooks();
+  }, [author]); 
 
-      fetch(URL)
-        .then(response => response.json())
-        .then(data => setBooks(data.items || []))
-        .catch(error => console.error('Ошибка:', error));
-    }
-  }, [author]);
-
-  if (!author) return null;
+  if (!author) return null; 
 
   return (
     <div>
       <h2>Книги автора: {author}</h2>
       {books.map(book => (
-        <div key={book.id}>{book.volumeInfo.title}</div>
+        <div key={book.id}>{book.volumeInfo.title}</div> 
       ))}
     </div>
   );
