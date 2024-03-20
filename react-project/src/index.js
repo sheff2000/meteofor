@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './components/GoogleBook/App/App';
+// import App from './components/GoogleBook/App/App';
+import App from './components/PrivatBank/App/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
