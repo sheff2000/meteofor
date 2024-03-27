@@ -4,7 +4,7 @@ import Kurs from '../Kurs/Kurs';
 import Calc from '../Calc/Calc';
 import privatAPI from '../../../api/privatAPI';
 
-function App() {
+function AppPrivat() {
     const [error, setError] = useState(null);
     const [exchangeRates, setExchangeRates] = useState({
         USD: {
@@ -46,6 +46,7 @@ function App() {
     
   return (
     <div>
+        <h1>Privat Bank</h1>
         <div className='row'>
             <div className='col-md-4'>
                 {error ? <div>{error}</div> : <Kurs exchangeRates={exchangeRates} />}
@@ -59,4 +60,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppPrivat;

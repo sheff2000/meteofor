@@ -8,6 +8,9 @@ body {
   
 }
 
-.main-cont {
+.main-cont, .main-content {
   margin: 20px;
+}
+nav {
+  margin-bottom: 40px;
 }

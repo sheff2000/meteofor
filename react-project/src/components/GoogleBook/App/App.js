@@ -8,7 +8,7 @@ import SortBooks from '../SortBooks/SortBooks';
 import AuthorDetails from '../AuthorDetails/AuthorDetails';
 import BookFavorite from '../BookFavorite/BookFavorite';
 
-function App() {
+function AppGoogle() {
     const [books, setBooks] = useState([]);
     const [selectedAuthor, setSelectedAuthor] = useState(null);
     const [booksFavorite, setBooksFavorite] = useState([]);
@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div>
+        <h1>Google Book</h1>
         <div className='row header-t1'>
           <div className='col-12'>
             <InputBookName onSearch={searchBooks} onAuthorClick={handleAuthorClick}/>
@@ -74,4 +75,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppGoogle;
